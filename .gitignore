@@ -12,7 +12,10 @@
 /build
 
 # misc
+.idea/vcs.xml
+.idea/codeStyles/
 .DS_Store
+.eslintcache
 .env.local
 .env.development.local
 .env.test.local
