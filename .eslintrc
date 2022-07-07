@@ -75,6 +75,15 @@
     ],
     "import/named": "off",
     "unused-imports/no-unused-imports": "warn",
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          "@mui/*/*/*",
+          "!@mui/material/test-utils/*"
+        ]
+      }
+    ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "comma-dangle": [
@@ -88,6 +97,9 @@
       "warn",
       {
         "endOfLine": "auto"
+      },
+      {
+        "usePrettierrc": true
       }
     ],
     "@typescript-eslint/interface-name-prefix": "off",
@@ -97,7 +109,10 @@
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-var-requires": "off",
     "react/jsx-uses-react": "off",
-    "jsx-quotes": ["error", "prefer-single"],
+    "jsx-quotes": [
+      "error",
+      "prefer-single"
+    ],
     "react/react-in-jsx-scope": "off"
   },
   "settings": {
@@ -107,7 +122,12 @@
     },
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
       }
     }
   },
