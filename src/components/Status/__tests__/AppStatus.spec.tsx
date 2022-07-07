@@ -21,7 +21,6 @@ describe('AppStatus component test', () => {
   it('should render notFound component', () => {
     render(<AppStatus status={Statuses.ERROR}>{child}</AppStatus>);
 
-    screen.debug();
     expect(screen.queryByText('Test')).not.toBeInTheDocument();
     expect(screen.getByTestId('notFound')).toBeInTheDocument();
   });
