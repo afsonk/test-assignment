@@ -1,5 +1,5 @@
 import React, { FC, lazy, Suspense } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import { RouteNames } from '../../models';
 import { Home } from '../../pages';
@@ -21,6 +21,10 @@ export const AppRouter: FC = () => {
               <LazyDetailedPage />
             </Suspense>
           }
+        />
+        <Route
+          path={RouteNames.NOT_FOUND}
+          element={<Navigate to={RouteNames.HOME}/>}
         />
       </Routes>
     </BrowserRouter>

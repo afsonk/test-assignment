@@ -1,4 +1,5 @@
 export enum RouteNames {
   HOME = '/',
-  DETAILED = '/:cityName',
+  DETAILED = '/city/:cityName',
+  NOT_FOUND = '*'
 }

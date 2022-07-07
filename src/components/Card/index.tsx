@@ -39,7 +39,7 @@ export const CityCard: FC<IProps> = ({ city }) => {
           <img src={getItemImage(city.weather[0].icon)} alt={city.weather[0].description} />
         </Typography>
         <Typography variant='body2'>{city.weather[0].description}</Typography>
-        <Link to={`${city.name}`} style={{ textDecoration: 'none', color: '#fff' }}>
+        <Link to={`/city/${city.name}`} style={{ textDecoration: 'none', color: '#fff' }}>
           <Button>Detail</Button>
         </Link>
       </CardContent>
