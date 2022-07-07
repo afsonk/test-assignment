@@ -2,6 +2,7 @@
   "name": "codica",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://afsonk.github.io/test-assignment/",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -35,6 +36,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
@@ -46,7 +48,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint ./**/*.{ts,tsx}",
     "lint:fix": "eslint --fix ./**/*.{ts,tsx} && prettier --write **/*.{ts,tsx}",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
