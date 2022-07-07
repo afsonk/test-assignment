@@ -4,6 +4,7 @@
 3. React router dom
 4. Redux toolkit
 5. Redux-persist
+6. Husky
 
 ## Available Scripts
 
